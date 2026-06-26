@@ -40,8 +40,8 @@ https://live-metrics-anomaly-detector.onrender.com
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/live-metrics-anomaly-detector.git
-cd live-metrics-anomaly-detector
+git clone https://github.com/alainaasyed/live_metrics_anomaly_detector.git
+cd live_metrics_anomaly_detector
 ```
 
 Install the required packages:
