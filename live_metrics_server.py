@@ -17,7 +17,7 @@ Endpoints:
   POST /insights         — IsolationForest ML analysis
 """
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 import psutil, time, os, sqlite3, json
 from datetime import datetime, date
@@ -26,6 +26,9 @@ from sklearn.ensemble import IsolationForest
 from sklearn.preprocessing import StandardScaler
 
 app = Flask(__name__)
+@app.route("/")
+def home():
+    return send_from_directory(".", "index.html")
 CORS(app)
 
 DB_FILE = 'metrics_history.db'
